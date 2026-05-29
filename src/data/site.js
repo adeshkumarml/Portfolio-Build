@@ -11,7 +11,7 @@ export const siteData = {
         jp: "現在、多言語検索とメタデータを考慮したランキングを用いて、日英のビジネスコミュニケーションを支援する文脈理解型システムを開発しています。人による選択を前提とした支援設計を目指しています。"
       },
       tags: ["Multilingual NLP", "Reranking", "Context-Aware", "Human-in-the-Loop"],
-      github: "#",
+      github: "https://github.com/adeshkumarml/Context-Aware-Business-Japanese--English-Interpreter-Assistant",
       //demo: "#"
     },
     // project 2
