@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "@fontsource/zen-kaku-gothic-new";
+@import "@fontsource/noto-sans-jp";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+@keyframes floatIn{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(5px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-float-in{
+  opacity: 0;
+   animation: floatIn 1.5s
+    cubic-bezier(0.22, 1, 0.36, 1)
+    both;
+}
+
+html * {
+  transition:
+    background-color 380ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 380ms cubic-bezier(0.22, 1, 0.36, 1),
+    text-shadow 380ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.font-jp{
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.font-en{
+  font-family: "Inter", sans-serif;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.22);
+  color: inherit;
+}
+
+.dark ::selection {
+  background: rgba(129, 140, 248, 0.28);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.22);
+  border-radius: 999px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.38);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(129, 140, 248, 0.28);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(129, 140, 248, 0.42);
+}
