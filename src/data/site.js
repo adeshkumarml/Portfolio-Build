@@ -1,6 +1,6 @@
 export const siteData = {
   projects: [
-    //project 3
+    //project 4
     {
       title: {
         en: "Context-Aware Japanese-English Business Communication Assistant [Ongoing]",
@@ -13,6 +13,20 @@ export const siteData = {
       tags: ["Multilingual NLP", "Reranking", "Context-Aware", "Human-in-the-Loop"],
       github: "https://github.com/adeshkumarml/Context-Aware-Business-Japanese--English-Interpreter-Assistant",
       //demo: "#"
+    },
+    //project 3
+    {
+      title: {
+        en: "Aggregate Summarizer [Pilot Service]",
+        jp: "AI文書要約・比較プラットフォーム [パイロット版]"
+      },
+      desc: {
+        en: "A production-ready multi-LLM inference platform that orchestrates concurrent document summarization across multiple AI models, evaluates outputs using semantic and operational metrics, and synthesizes a consensus summary through an asynchronous document processing pipeline.",
+        jp: "複数のAIモデルによる文書要約を並列実行して、意味的・運用的指標で評価した上で統合要約を生成する、本番運用を想定したマルチLLM推論プラットフォーム。"
+      },
+      tags: ["AI Inference", "LLM Orchestration", "Multi-LLM", "Semantic Evaluation"],
+      github: "https://github.com/adeshkumarml/Aggregate-Summarizer-Dev",
+      demo: "https://aggregatesummarizer.com/"
     },
     // project 2
     {
