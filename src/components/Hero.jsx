@@ -60,7 +60,7 @@ function Hero({ locale, language }) {
 
         <div style={{ animationDelay:"1.0s"}} className="animate-float-in mt-15">
          <div className="mt-10 w-full max-w-[610px]"> 
-            <Button href="/Adesh Kr Sahoo Resume.pdf" 
+            <Button href="/Adesh Kumar Sahoo Resume.pdf" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
